@@ -18,7 +18,7 @@ func main() {
 
 	offsets := index.Lookup([]byte("*"), -1)
 
-  for _, value := range offsets[0:10] {
+  for _, value := range offsets[0:100] {
     log.Println(value, string(sometext[value]))
   }
 }
